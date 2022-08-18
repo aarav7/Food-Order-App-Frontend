@@ -39,7 +39,7 @@ const AvailableMeals = props => {
 
     async function fetchMeals() {
         try {
-            const response = await fetch("http://localhost:3001/meals");
+            const response = await fetch("https://food-order-app-backend-aarav.herokuapp.com/meals");
             if (!response.ok) {
                 throw new Error("Something went wrong");
             }
