@@ -12,7 +12,7 @@ const CartButton = props => {
     return (
         <button className={styles.button} onClick={props.onClick}>
             <span className={styles.icon}><CartIcon /></span>
-            <span>Your Cart</span>
+            <span>Cart</span>
             <span className={styles.badge}>{totalItems}</span>
         </button>
     )
