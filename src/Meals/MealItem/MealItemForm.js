@@ -8,7 +8,7 @@ const MealItemForm = props => {
     const inputRef = useRef();
     function addCartItem(item) {
         const inputVal = parseInt(inputRef.current.value);
-        if (inputVal !== '0') {
+        if (inputVal !== 0) {
             const newItem = { ...item, quantity: inputVal };
             ctx.addItem(newItem);
         }

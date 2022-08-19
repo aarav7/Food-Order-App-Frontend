@@ -12,9 +12,10 @@ function redu(stat, actio) {
             console.log("ERROR");
             console.log(stat.items);
             stat.items.push(actio.item);
+            const updatedAmount = actio.item.price * actio.item.quantity;
             return {
                 items: stat.items,
-                totalAmount: actio.item.price
+                totalAmount: updatedAmount
             }
         }
         else {
